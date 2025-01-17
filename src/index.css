@@ -1,3 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* CSS reset  */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+/* changes the default browser highlight  */
+::selection {
+	background-color: black;
+	color: white;
+}
+
+/* component styling Button  */
+
+@layer components {
+	.btn {
+		@apply bg-white px-[20px] py-[10px] border border-gray-300 rounded-full text-primaryBtn text-fontSm hover:bg-transparent hover:text-white cursor-pointer transition duration-300;
+	}
+
+	.list {
+		@apply flex items-center my-3 text-lightText gap-3
+	}
+}
+
+@layer utilities {
+	.navLink {
+		@apply hover:text-white/70 text-fontSm transition duration-200 max-[826px]:text-sm;
+	}
+
+	.nav {
+		@apply transition-all duration-300 flex py-[8px] max-md:bottom-0 max-lg:px-[3%] max-md:px-0 UIpadding z-10 top-0 fixed right-0 w-full h-[60px] lg:items-center px-10 justify-between
+	}
+
+	.UIpadding {
+		@apply px-[10%];
+	}
+
+	.hover {
+		@apply absolute flex opacity-0 transition-all hover:pt-0 ease-in-out duration-300 hover:opacity-100 rounded-[10px] justify-center bg-light_blue/35 flex-col gap-2 items-center w-full h-full right-0 pt-[10rem] top-0;
+	}
+
+	.form {
+		@apply w-[450px] bg-formColor p-[15px] max-lg:w-[600px] max-md:w-[420px] max-sm:w-[370px] rounded-md focus:border-0 focus:border-lightText outline-none
+	}
+
+	.hovertext {
+		@apply hover:text-lightText cursor-pointer
+	}
+}

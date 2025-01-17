@@ -5,17 +5,28 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ], theme: {
     extend: {
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"]
+      },
       colors: {
         "light_blue": "#212ea0",
         "primary_blur": "#000f38",
         "nav_blue": "#0e1235",
-        // gradient: "linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)), url("../../assets / hero.jpg")"
+        "lightText": "#676767",
         "line": "#747474",
-        "contact": "#000f38"
-
+        "contact": "#000f38",
+        "primaryBtn": "#212121",
+        "btn": "#3819e6",
+        "formColor": "#ebecfe"
       },
       backgroundImage: {
-        "hero": "url()"
+        "hero-img": "url('/src/assets/gallery/hero.jpg')",
+      },
+      fontSize: {
+        fontSm: "1rem"
+      },
+      borderRadius: {
+        br: "10px"
       }
     },
   },

@@ -5,7 +5,7 @@ import Gallery4 from "./gallery-4.png"
 
 import AboutImg from "./about.png"
 
-import Hero from "./hero.png"
+import HeroImg from "./hero.jpg"
 
 export {
     Gallery1,
@@ -16,5 +16,5 @@ export {
 
     AboutImg,
 
-    Hero
+    HeroImg
 }
