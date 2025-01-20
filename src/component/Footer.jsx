@@ -10,8 +10,8 @@ const Footer = () => {
 					<p>© {year} Edusity. All right reserved.</p>
 				</div>
 				<div className="flex gap-4">
-					<p className='hovertext'>Terms of service</p>
-					<p className='hovertext'>Privacy Policy</p>
+					<p className="hovertext">Terms of service</p>
+					<p className="hovertext">Privacy Policy</p>
 				</div>
 			</div>
 		</div>

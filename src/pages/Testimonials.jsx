@@ -7,7 +7,7 @@ const Testimonials = () => {
 	return (
 		<div id="Testimonial">
 			<Title Title={'what student says'} subTitle={'testimonials'} />
-			<div className="flex UIpadding gap-3">
+			<div className="flex items-center justify-between overflow-hidden UIpadding gap-3">
 				{Cards.map((card, index) => (
 					<Card card={card} key={index} />
 				))}

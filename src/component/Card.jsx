@@ -2,8 +2,8 @@ import React from 'react';
 
 const Card = ({ card }) => {
 	return (
-		<div>
-			<div className="flex ">
+		<div className="rounded-xl px-10 py-4 bg-white border border-red-600">
+			<div className="flex gap-3">
 				<div>
 					<img
 						width={'50px'}
