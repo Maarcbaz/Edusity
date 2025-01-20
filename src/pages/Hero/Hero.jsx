@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import { HeroText } from '../constant';
-import { Button } from '../component';
-import { Dark_arrow } from '../assets/icons';
+import { HeroText } from '../../constant';
+import { Button } from '../../component';
+import { Dark_arrow } from '../../assets/icons';
 const Hero = () => {
 	return (
 		<header className="font-roboto">

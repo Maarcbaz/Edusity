@@ -1,7 +1,7 @@
 import React from 'react';
-import Title from './Title';
+import Title from '../Title/Title';
 
-import { ProgramImg } from '../constant';
+import { ProgramImg } from '../../constant';
 
 const Program = () => {
 	return (

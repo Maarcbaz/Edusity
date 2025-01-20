@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
-import Title from './Title';
-import { GalleryImg } from '../constant';
-import { Button } from '../component';
-import { White_arrow } from '../assets/icons';
+import Title from '../Title/Title';
+import { GalleryImg } from '../../constant';
+import { Button } from '../../component';
+import { White_arrow } from '../../assets/icons';
 
 const Campus = () => {
 	return (
@@ -12,7 +12,12 @@ const Campus = () => {
 				{GalleryImg.map((gallery, index) => (
 					<Fragment key={index}>
 						<div>
-							<img data-aos={gallery.animation} className="rounded-br" src={gallery.src} alt={gallery.alt} />
+							<img
+								data-aos={gallery.animation}
+								className="rounded-br"
+								src={gallery.src}
+								alt={gallery.alt}
+							/>
 						</div>
 					</Fragment>
 				))}
