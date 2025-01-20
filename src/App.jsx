@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Footer, Navbar } from './component';
-import { About, Campus, Hero, Program, Testimonials } from './pages';
-import Contact from './pages/Contact';
+import { About, Campus, Hero, Program, Contact, Testimonials } from './pages';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 function App() {
