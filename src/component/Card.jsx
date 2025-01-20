@@ -1,13 +1,11 @@
 import React from 'react';
-import { Cards } from '../constant';
-
-const Card = () => {
+const Card = ({ card }) => {
 	return (
 		<>
-			{Cards.map((card, index) => (
-				<section className="my-6" key={index}>
+			<div className="flex items-center  justify-between overflow-hidden gap-1">
+				<section className="my-6">
 					<div className="flex flex-col gap-4 w-[350px] bg-gray-100 shadow-md py-8 px-6 mx-4 rounded-xl bg-primary/10 relative">
-						<div className="flex gap-4">
+						<div className="flex gap-2">
 							<div>
 								<img
 									width={'50px'}
@@ -28,7 +26,7 @@ const Card = () => {
 						</div>
 					</div>
 				</section>
-			))}
+			</div>
 		</>
 	);
 };
