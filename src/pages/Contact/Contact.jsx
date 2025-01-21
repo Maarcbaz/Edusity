@@ -1,7 +1,7 @@
 import React from 'react';
-import Title from './Title';
-import { ContactInfo } from '../constant';
-import { Form } from '../component';
+import Title from '../Title/Title';
+import { ContactInfo } from '../../constant';
+import { Form } from '../../component';
 
 const Contact = () => {
 	return (
