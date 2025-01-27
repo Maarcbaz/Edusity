@@ -1,10 +1,9 @@
 import React from 'react';
-import Title from './Title';
-import { Card } from '../component';
+import Title from '../Title/Title';
 import Slider from 'react-slick';
-import { settings } from '../constant';
-import { Cards } from '../constant';
-
+import { settings } from '../../constant';
+import { Cards } from '../../constant';
+import { Card } from '../../component';
 const Testimonials = () => {
 	return (
 		<div id="Testimonial" className="UIpadding">

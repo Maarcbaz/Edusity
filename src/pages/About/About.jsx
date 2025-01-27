@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { AboutSec } from '../constant';
+import { AboutSec } from '../../constant';
 const About = () => {
 	return (
 		<div
