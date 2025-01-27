@@ -2,7 +2,10 @@ import React, { useEffect } from 'react';
 import { Footer, Navbar } from './component';
 import { About, Campus, Hero, Program, Contact, Testimonials } from './pages';
 import AOS from 'aos';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import 'aos/dist/aos.css';
+
 function App() {
 	useEffect(() => {
 		AOS.init({

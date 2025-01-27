@@ -1,18 +1,19 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Title from '../Title/Title';
-import { Card } from '../../component';
+import Slider from 'react-slick';
+import { settings } from '../../constant';
 import { Cards } from '../../constant';
-
+import { Card } from '../../component';
 const Testimonials = () => {
 	return (
-		<Fragment>
+		<div id="Testimonial" className="UIpadding">
 			<Title Title={'what student says'} subTitle={'testimonials'} />
-			<div className="UIpadding">
-				<div id="Testimonial" className="flex overflow-hidden">
-					<Card />
-				</div>
-			</div>
-		</Fragment>
+			<Slider {...settings}>
+				{Cards.map((card, index) => (
+					<Card card={card} key={index} />
+				))}
+			</Slider>
+		</div>
 	);
 };
 
