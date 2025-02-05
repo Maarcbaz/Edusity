@@ -20,14 +20,14 @@ const Navbar = () => {
 				className={`
 				${sticky && 'bg-nav_blue'} 
 				nav`}>
-				<div className="w-[150px] h-[30px] max-md:py-2 max-md:pl-3 cursor-pointer">
+				<div className="w-[150px] h-[30px]  max-sm:py-1 max-md:py-2 max-sm:pl-10  max-md:pl-3 cursor-pointer">
 					<a href="#">
 						<img src={Logo} alt="logo" />
 					</a>
 				</div>
 				<div className="">
 					<img
-						className=" w-[30px] z-20 absolute right-6 md:hidden top-5"
+						className=" w-[30px] cursor-pointer z-20 absolute right-6 md:hidden top-5"
 						src={Menu_icon}
 						alt="menu_icon"
 						onClick={handleActive}
